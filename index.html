@@ -4,24 +4,43 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Emscripten-Generated Code</title>
-    <style>body {
-  font-family: arial;
-  margin: 0;
-  padding: none;
-}
+    <style>
+      body {
+        background-color: black; /* Set body background to black */
+        font-family: arial;
+        margin: 0;
+        padding: 0; /* Remove padding from body */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Ensure page takes full viewport height */
+      }
 
-.emscripten { padding-right: 0; margin-left: auto; margin-right: auto; display: block; }
-div.emscripten { text-align: center; }
-div.emscripten_border { border: 1px solid black; }
-/* the canvas *must not* have any border or padding, or mouse coords will be wrong */
-canvas.emscripten { border: 0px none; background-color: black; }
+      .emscripten {
+        padding-right: 0;
+        margin: 0; /* Remove default margin from emscripten container */
+        display: block; 
+      }
 
-#emscripten_logo {
-  display: inline-block;
-  margin: 0;
-  padding: 6px;
-  width: 265px;
-}
+      div.emscripten {
+        text-align: center;
+      }
+
+      /* Remove border from emscripten_border */
+      div.emscripten_border { 
+        border: none;
+      }
+
+      /* Ensure canvas has no border or padding */
+      canvas.emscripten {
+        border: 0px none;
+        background-color: black; 
+      }
+
+      /* Hide the Emscripten logo */
+      #emscripten_logo {
+        display: none;
+      }
 
 .spinner {
   height: 30px;
