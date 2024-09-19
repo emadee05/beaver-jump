@@ -14,13 +14,14 @@ Player movement is controlled using the keyboard, allowing the beaver to navigat
 ## Feature Set
 
 # Beaver Game Features
+| **Developer** | **Priority 1 Features**                                                  | **Priority 2 Features**                                           | **Priority 3 Features**                              | **Priority 4 Features**                                                  |
+|---------------|--------------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------|--------------------------------------------------------------------------|
+| **Ashiria**   | - Randomized tile spawning and score tracking                            | - Disappearing and moving tiles                                   | - Home screen for single-player vs. multiplayer modes | - End-game text display and restart functionality                         |
+| **Sani**      | - Multiplayer beaver controls (arrow keys and AWD keys) with elastic jumps off tiles | - Enemy invaders that shoot at random intervals, player score updates based on height | - Spring tiles                                       | - Trampolines and parachutes                                              |
+| **Emily**     | - Dynamic screen scrolling as beaver ascends, removing old and generating new tiles | - Game ends when shot by invader bullets or falling off platforms (includes falling animation) | - Sound effects                                      | - Power-ups for shielding from enemy bullets                              |
 
-| Developer | Priority 1 Features                                      | Priority 2 Features                                             | Priority 3 Features                  | Priority 4 Features                                      |
-|-----------|----------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------|----------------------------------------------------------|
-| Ashiria   | - tiles spawn randomly and score counting   |  Disappearing and moving tiles  | - Implementing home screen for single vs multiplayer    | -  - Add text when the game is over | - Add text when the game is over and restart game                 |
-| Sani      | - Multiplayer beavers (arrow keys and AWD keys) and jumping elastically off tiles|     Create enemy invaders and shoot at random intervals and score of the player updates depending on height | - Spring tiles | - Trampolines, and parachutes                    |
-| Emily     | - Scroll the screen up (only tiles, beaver stays const at max) as the beaver jumps, remove old and generate new tiles      | - Game ends when player is shot by attacker bullet or falls off platform (falling beaver animation) |  - Sound effects | Powerups to shield from enemy bullets |
 
+## HIGHLIGHTS
 | **Feature**                  | **Description**                                                                                     |
 |------------------------------|-----------------------------------------------------------------------------------------------------|
 | **Advanced Graphics and Sprites**  | Custom-designed sprites for the beaver, costumes, diverse tile types, backgrounds, springs, power-ups, invader, and bullets. |
