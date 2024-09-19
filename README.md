@@ -1,4 +1,5 @@
-# Game Design Document
+# Beaver Jump!!
+[Play at this link](https://emadee05.github.io/beaver-jump/)
 
 ## Section 0: Summary
 Team Members: Ashiria, Emily, Sani 
