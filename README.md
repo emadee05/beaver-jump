@@ -1,35 +1,49 @@
-# Beaver Jump!!
-[Play at this link](https://emadee05.github.io/beaver-jump/)
+# Beaver Jump  
+[Play Here](https://emadee05.github.io/beaver-jump/)
 
-## Summary
-Ashiria, Emily, Sani 
-The game we developed is called "Beaver Jump", a feature-enhanced variation of Doodle Jump with a beaver as the main character. The objective is to jump as high as possible without falling or getting hit by enemy projectiles. As the beaver ascends, it accumulates points and power-ups, adding layers of excitement and challenge to the gameplay.
+**Beaver Jump** is a vertical scrolling platformer inspired by *Doodle Jump*, featuring custom-built gameplay mechanics, dynamic scrolling, and real-time collision physics. The entire physics engine was developed from scratch in C++ and compiled to WebAssembly for performance in the browser.
 
-## Gameplay
-Inspired by Doodle Jump, "Beaver Jump" is a dynamic vertical platformer where the player controls a beaver, continuously jumping on tiles to ascend higher on the screen. As the beaver progresses, the background shifts upward, creating a seamless, animated scrolling effect. Points accumulate as the player advances, and the challenge intensifies with the introduction of an airborne enemy. This enemy moves horizontally across the top of the screen, launching projectiles from random locations. While it never directly interacts with the beaver, the player must avoid being hit by its bullets. The game ends if the beaver falls off the tiles or is struck by a projectile. Although there is no definitive winning condition, players aim to achieve the highest possible score by surviving and progressing upward.
+## Project Highlights
 
-Player movement is controlled using the keyboard, allowing the beaver to navigate side to side while jumping between tiles. The game features a physics engine that simulates realistic collisions, gravity, and spring mechanics, enhancing the overall gameplay experience. Tiles and bullets are represented by polygons, while sprites are used for the beaver and the enemy invader, creating a visually engaging environment.
+- **Custom Physics Engine in C++**  
+  Simulates gravity, elastic collisions, spring mechanics, and platform interactions without using any third-party libraries.
 
+- **WebAssembly Integration**  
+  The C++ engine is compiled to WebAssembly, delivering smooth and efficient performance directly in the browser.
 
-## Feature Set
+- **Real-Time Gameplay Logic**  
+  Features seamless upward scrolling, dynamic tile generation, enemy projectiles, and responsive controls.
 
-# Beaver Game Features
-| **Developer** | **Priority 1 Features**                                                  | **Priority 2 Features**                                           | **Priority 3 Features**                              | **Priority 4 Features**                                                  |
-|---------------|--------------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------|--------------------------------------------------------------------------|
-| **Ashiria**   | - Randomized tile spawning and score tracking                            | - Disappearing and moving tiles                                   | - Home screen for single-player vs. multiplayer modes | - End-game text display and restart functionality                         |
-| **Sani**      | - Multiplayer beaver controls (arrow keys and AWD keys) with elastic jumps off tiles | - Enemy invaders that shoot at random intervals, player score updates based on height | - Spring tiles                                       | - Trampolines and parachutes                                              |
-| **Emily**     | - Dynamic screen scrolling as beaver ascends, removing old and generating new tiles | - Game ends when shot by invader bullets or falling off platforms (includes falling animation) | - Sound effects                                      | - Power-ups for shielding from enemy bullets                              |
+- **Browser-Based Deployment**  
+  Fully interactive and runs in-browser using HTML5 Canvas, JavaScript, and WebAssembly. No plugins required.
 
+## Core Features
 
-## HIGHLIGHTS
-| **Feature**                  | **Description**                                                                                     |
-|------------------------------|-----------------------------------------------------------------------------------------------------|
-| **Advanced Graphics and Sprites**  | Custom-designed sprites for the beaver, costumes, diverse tile types, backgrounds, springs, power-ups, invader, and bullets. |
-| **Immersive Sound Effects**        | Audio effects for key actions like jumping, taking damage, and falling to enhance the gameplay experience. |
-| **Seamless Scrolling**             | Smooth scrolling mechanism as the beaver jumps, with dynamically generated tiles to keep the game engaging. |
-| **Real-Time Score Rendering**      | Live score tracking in the top corner, along with a "Game Over" message when the beaver falls. |
-| **Intuitive Key Controls**         | Responsive arrow key inputs allow for precise control of the beaver’s movement across platforms. |
-| **Challenging Enemy Dynamics**     | An enemy invader moves across the screen, firing projectiles to test the player’s reflexes and strategy. |
+| Feature               | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| Physics Engine         | Built entirely in C++ to simulate gravity, collisions, bounce, and springs |
+| Dynamic Scrolling      | Continuously generates and removes tiles as the beaver ascends              |
+| Enemy Mechanics        | Enemy invader fires random projectiles; player must dodge to survive        |
+| Game Over Conditions   | Game ends upon fall or projectile hit, with falling animation and restart   |
+| Score Tracking         | Live display of player height as score                                      |
+| Sound Effects          | Includes audio cues for jumping, falling, and taking damage                 |
+| Visual Design          | Custom pixel sprites for beaver, tiles, springs, enemies, and background    |
+| Power-Ups              | Shield items grant temporary immunity from enemy bullets                    |
 
+## Technologies Used
 
+- C++ (physics engine and logic)
+- WebAssembly (compiled C++ for browser execution)
+- JavaScript (event handling and game state)
+- HTML5 Canvas (rendering)
+- CSS3 and Audio API (styling and sound)
+- GitHub Pages (deployment)
 
+## Run Locally
+
+To run the game locally:
+
+```bash
+git clone https://github.com/emadee05/beaver-jump.git
+cd beaver-jump
+open index.html  # or use Live Server extension in VS Code
