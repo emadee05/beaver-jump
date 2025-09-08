@@ -33,7 +33,7 @@
 ## Technologies Used
 
 - C (physics engine and logic)
-- WebAssembly (compiled C++ for browser execution)
+- WebAssembly (compiled C for browser execution)
 - JavaScript (event handling and game state)
 - HTML5 Canvas (rendering)
 - CSS3 and Audio API (styling and sound)
